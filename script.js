@@ -109,4 +109,24 @@
             document.hidden ? stopAutoRotate() : startAutoRotate();
         });
     }
+
+    // Feature filter
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const featCards = document.querySelectorAll(".feat-card");
+    filterBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            filterBtns.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            const filter = btn.getAttribute("data-filter");
+            requestAnimationFrame(() => {
+                featCards.forEach(card => {
+                    if (filter === "all" || card.getAttribute("data-category") === filter) {
+                        card.classList.remove("hidden");
+                    } else {
+                        card.classList.add("hidden");
+                    }
+                });
+            });
+        });
+    });
 })();
