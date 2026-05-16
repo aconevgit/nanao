@@ -74,9 +74,16 @@
                                 width="36"
                                 height="36"
                         /></a>
-                        <a href="#footer-area" class="nav-cta-text"
-                            >Buy Now<span>→</span></a
-                        >
+                        <div class="nav-right">
+                            <div class="nav-links">
+                                <button class="nav-link" id="navPreviewBtn">Preview</button>
+                                <button class="nav-link" id="navFeaturesBtn">Features</button>
+                                <a href="quick-start-guide.pdf" download class="nav-link">Quick Start Guide</a>
+                            </div>
+                            <a href="#footer-area" class="nav-cta-text"
+                                >Buy Now<span>→</span></a
+                            >
+                        </div>
                     </div>
                 </div>
             </div>
@@ -206,107 +213,8 @@
             </div>
         </section>
 
-        <!-- ROTATING TESTIMONIALS -->
-        <section class="social-proof-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Look at what our customers have to say!</h2>
-                </div>
-                <div
-                    class="testimonial-container"
-                    id="testimonialContainer"
-                    aria-live="polite"
-                >
-                    <!-- slide 1 -->
-                    <div class="testimonial-slide active" data-index="0">
-                        <div class="testimonial-left">
-                            <div class="testimonial-avatar">
-                                <div class="avatar-placeholder">SM</div>
-                            </div>
-                            <div
-                                class="testimonial-stars"
-                                aria-label="5 out of 5 stars"
-                            >
-                                ★★★★★
-                            </div>
-                            <div class="testimonial-author">Sarah M.</div>
-                            <div class="testimonial-title">
-                                Digital Course Creator
-                            </div>
-                        </div>
-                        <div class="testimonial-right">
-                            <div class="testimonial-quote">
-                                Honestly I was about to just give up and hire
-                                someone. Everything I tried was either way over
-                                my head or looked terrible. This just worked.
-                                Had my page up in under an hour and it actually
-                                looks good. Like really good.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- slide 2 -->
-                    <div class="testimonial-slide" data-index="1">
-                        <div class="testimonial-left">
-                            <div class="testimonial-avatar">
-                                <div class="avatar-placeholder">JK</div>
-                            </div>
-                            <div
-                                class="testimonial-stars"
-                                aria-label="5 out of 5 stars"
-                            >
-                                ★★★★★
-                            </div>
-                            <div class="testimonial-author">James K.</div>
-                            <div class="testimonial-title">
-                                Notion Template Seller
-                            </div>
-                        </div>
-                        <div class="testimonial-right">
-                            <div class="testimonial-quote">
-                                I am not a developer. I can just about edit text
-                                in a file. Swapped the logo, changed the copy,
-                                dropped in my video link and that was it. Did
-                                not expect it to be that fast. My page speed
-                                score is now 98 which apparently is very good.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- slide 3 -->
-                    <div class="testimonial-slide" data-index="2">
-                        <div class="testimonial-left">
-                            <div class="testimonial-avatar">
-                                <div class="avatar-placeholder">MR</div>
-                            </div>
-                            <div
-                                class="testimonial-stars"
-                                aria-label="5 out of 5 stars"
-                            >
-                                ★★★★★
-                            </div>
-                            <div class="testimonial-author">Mia R.</div>
-                            <div class="testimonial-title">
-                                Freelance Designer
-                            </div>
-                        </div>
-                        <div class="testimonial-right">
-                            <div class="testimonial-quote">
-                                I have been selling design assets for three
-                                years and my own page was embarrassing. Kept
-                                putting it off because nothing felt right. Found
-                                this, bought it for basically nothing, and
-                                finally have a page I actually send people to
-                                without cringing.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- dots navigation -->
-                    <div class="testimonial-dots" id="testimonialDots"></div>
-                </div>
-            </div>
-        </section>
-
         <!-- FEATURES -->
-        <section class="features-section">
+        <section class="features-section" id="features-block">
             <div class="container">
                 <div class="section-header">
                     <p class="eyebrow">Under the hood</p>
@@ -402,6 +310,108 @@
                         <div class="feat-card-title">PageSpeed 98 plus.</div>
                         <div class="feat-card-desc">Verified on mobile and desktop. The score is not an accident. It is the result of every decision in this codebase.</div>
                     </div>
+                </div>
+                <div class="features-cta">
+                    <a href="#footer-area" class="btn-primary">Buy Now<span>→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROTATING TESTIMONIALS -->
+        <section class="social-proof-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Look at what our customers have to say!</h2>
+                </div>
+                <div
+                    class="testimonial-container"
+                    id="testimonialContainer"
+                    aria-live="polite"
+                >
+                    <!-- slide 1 -->
+                    <div class="testimonial-slide active" data-index="0">
+                        <div class="testimonial-left">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder">SM</div>
+                            </div>
+                            <div
+                                class="testimonial-stars"
+                                aria-label="5 out of 5 stars"
+                            >
+                                ★★★★★
+                            </div>
+                            <div class="testimonial-author">Sarah M.</div>
+                            <div class="testimonial-title">
+                                Digital Course Creator
+                            </div>
+                        </div>
+                        <div class="testimonial-right">
+                            <div class="testimonial-quote">
+                                Honestly I was about to just give up and hire
+                                someone. Everything I tried was either way over
+                                my head or looked terrible. This just worked.
+                                Had my page up in under an hour and it actually
+                                looks good. Like really good.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="testimonial-slide" data-index="1">
+                        <div class="testimonial-left">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder">JK</div>
+                            </div>
+                            <div
+                                class="testimonial-stars"
+                                aria-label="5 out of 5 stars"
+                            >
+                                ★★★★★
+                            </div>
+                            <div class="testimonial-author">James K.</div>
+                            <div class="testimonial-title">
+                                Notion Template Seller
+                            </div>
+                        </div>
+                        <div class="testimonial-right">
+                            <div class="testimonial-quote">
+                                I am not a developer. I can just about edit text
+                                in a file. Swapped the logo, changed the copy,
+                                dropped in my video link and that was it. Did
+                                not expect it to be that fast. My page speed
+                                score is now 98 which apparently is very good.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div class="testimonial-slide" data-index="2">
+                        <div class="testimonial-left">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-placeholder">MR</div>
+                            </div>
+                            <div
+                                class="testimonial-stars"
+                                aria-label="5 out of 5 stars"
+                            >
+                                ★★★★★
+                            </div>
+                            <div class="testimonial-author">Mia R.</div>
+                            <div class="testimonial-title">
+                                Freelance Designer
+                            </div>
+                        </div>
+                        <div class="testimonial-right">
+                            <div class="testimonial-quote">
+                                I have been selling design assets for three
+                                years and my own page was embarrassing. Kept
+                                putting it off because nothing felt right. Found
+                                this, bought it for basically nothing, and
+                                finally have a page I actually send people to
+                                without cringing.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- dots navigation -->
+                    <div class="testimonial-dots" id="testimonialDots"></div>
                 </div>
             </div>
         </section>

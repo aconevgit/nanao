@@ -110,6 +110,21 @@
         });
     }
 
+    const navPreviewBtn = document.getElementById("navPreviewBtn");
+    if (navPreviewBtn && videoSection) {
+        navPreviewBtn.addEventListener("click", () => {
+            smoothScrollToElementWithOffset(videoSection, 48);
+        });
+    }
+
+    const featuresSection = document.getElementById("features-block");
+    const navFeaturesBtn = document.getElementById("navFeaturesBtn");
+    if (navFeaturesBtn && featuresSection) {
+        navFeaturesBtn.addEventListener("click", () => {
+            smoothScrollToElementWithOffset(featuresSection, 48);
+        });
+    }
+
     // Feature filter
     const filterBtns = document.querySelectorAll(".filter-btn");
     const featCards = document.querySelectorAll(".feat-card");
