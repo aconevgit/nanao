@@ -130,9 +130,13 @@
     const filterBtns = document.querySelectorAll(".filter-btn");
     const featCards = document.querySelectorAll(".feat-card");
     filterBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
+        btn.addEventListener("click", (event) => {
             filterBtns.forEach(b => b.classList.remove("active"));
             btn.classList.add("active");
+            document.querySelectorAll('.filter-btn').forEach(function(btn) {
+                btn.setAttribute('aria-pressed', 'false');
+            });
+            event.target.setAttribute('aria-pressed', 'true');
             const filter = btn.getAttribute("data-filter");
             requestAnimationFrame(() => {
                 featCards.forEach(card => {
