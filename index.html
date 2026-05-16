@@ -17,6 +17,11 @@
         <!-- Open Graph -->
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://nanotemplate.com/" />
+        <meta property="og:image" content="https://nanotemplate.com/images/video-thumbnail.webp" />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
+        <meta name="twitter:image" content="https://nanotemplate.com/images/video-thumbnail.webp" />
+        <meta name="twitter:image:alt" content="Nanotemplate - A 24kb HTML landing page template for digital products" />
         <meta
             property="og:title"
             content="Nanotemplate - HTML Landing Page Template"
@@ -76,8 +81,8 @@
                         /></a>
                         <div class="nav-right">
                             <div class="nav-links">
-                                <button class="nav-link" id="navPreviewBtn">Preview</button>
-                                <button class="nav-link" id="navFeaturesBtn">Features</button>
+                                <button type="button" class="nav-link" id="navPreviewBtn">Preview</button>
+                                <button type="button" class="nav-link" id="navFeaturesBtn">Features</button>
                                 <a href="quick-start-guide.pdf" download class="nav-link">Quick Start Guide</a>
                             </div>
                             <a href="#footer-area" class="nav-cta-text"
@@ -107,7 +112,7 @@
                     <a href="#footer-area" class="btn-primary"
                         >Buy Now<span>→</span></a
                     >
-                    <button class="ghost-link" id="seeItInActionBtn">
+                    <button type="button" class="ghost-link" id="seeItInActionBtn">
                         See It In Action
                     </button>
                 </div>
@@ -178,7 +183,6 @@
                 <div class="video-wrapper reveal">
                     <iframe
                         src="https://embed.voomly.com/embed/assets/embed.html?videoId=DU8OyhdE2nk-YiwqAHQdj5mDeyOLSGteBjVgxtdZQZqqO3g8d&videoRatio=1.777778&type=v&skinColor=rgba(0%2C171%2C231%2C1)"
-                        frameborder="0"
                         allow="
                             accelerometer;
                             autoplay;
@@ -188,6 +192,7 @@
                             picture-in-picture;
                         "
                         allowfullscreen
+                        sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
                         width="100%"
                         height="100%"
                         id="voomlyPlayer"
@@ -201,7 +206,7 @@
                             height="1080"
                             class="video-thumbnail"
                         />
-                        <button
+                        <button type="button"
                             class="video-play-btn"
                             aria-label="Play video"
                         ></button>
@@ -222,12 +227,12 @@
                     <p>Every decision was made on purpose. Here is what that means for you.</p>
                 </div>
                 <div class="features-filter">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="speed">Speed</button>
-                    <button class="filter-btn" data-filter="seo">SEO</button>
-                    <button class="filter-btn" data-filter="design">Design</button>
-                    <button class="filter-btn" data-filter="ownership">Ownership</button>
-                    <button class="filter-btn" data-filter="code">Code</button>
+                    <button type="button" class="filter-btn active" data-filter="all">All</button>
+                    <button type="button" class="filter-btn" data-filter="speed">Speed</button>
+                    <button type="button" class="filter-btn" data-filter="seo">SEO</button>
+                    <button type="button" class="filter-btn" data-filter="design">Design</button>
+                    <button type="button" class="filter-btn" data-filter="ownership">Ownership</button>
+                    <button type="button" class="filter-btn" data-filter="code">Code</button>
                 </div>
                 <div class="features-grid">
                     <!-- SPEED -->

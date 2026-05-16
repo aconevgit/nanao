@@ -61,6 +61,7 @@
         dotsContainer.innerHTML = "";
         slides.forEach((_, idx) => {
             const dot = document.createElement("button");
+            dot.setAttribute("type", "button");
             dot.classList.add("dot");
             if (idx === currentIndex) dot.classList.add("active");
             dot.setAttribute("aria-label", `Go to testimonial ${idx + 1}`);
