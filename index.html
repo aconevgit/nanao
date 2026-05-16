@@ -12,6 +12,7 @@
             content="A 24kb HTML landing page template for digital products. Faster than ClickFunnels, owned forever, $9.99 one time."
         />
         <meta name="theme-color" content="#f6f6f2" />
+        <link rel="preload" href="fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="canonical" href="https://nanotemplate.com/" />
 
         <!-- Open Graph -->
@@ -68,7 +69,7 @@
     </head>
     <body>
         <!-- NAVIGATION -->
-        <nav class="nav-section">
+        <nav class="nav-section" aria-label="Main navigation">
             <div class="container">
                 <div class="nav">
                     <div class="nav-inner">
@@ -196,6 +197,7 @@
                         width="100%"
                         height="100%"
                         id="voomlyPlayer"
+                        title="Nanotemplate product demo video"
                         style="display: none"
                     ></iframe>
                     <div class="video-facade" id="videoFacade">
@@ -205,6 +207,8 @@
                             width="1920"
                             height="1080"
                             class="video-thumbnail"
+                            loading="lazy"
+                            decoding="async"
                         />
                         <button type="button"
                             class="video-play-btn"
@@ -234,7 +238,7 @@
                     <button type="button" class="filter-btn" data-filter="ownership" aria-pressed="false">Ownership</button>
                     <button type="button" class="filter-btn" data-filter="code" aria-pressed="false">Code</button>
                 </div>
-                <div class="features-grid">
+                <div class="features-grid" aria-live="polite">
                     <!-- SPEED -->
                     <div class="feat-card reveal" data-category="speed">
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="#818cf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="21 4 13 20 19 20 15 32 23 16 17 16 21 4"/></svg>
@@ -337,7 +341,7 @@
                     <div class="testimonial-slide reveal active" data-index="0">
                         <div class="testimonial-left">
                             <div class="testimonial-avatar">
-                                <div class="avatar-placeholder">SM</div>
+                                <div class="avatar-placeholder" role="img" aria-label="Sarah M. avatar">SM</div>
                             </div>
                             <div
                                 class="testimonial-stars"
@@ -366,7 +370,7 @@
                     <div class="testimonial-slide reveal" data-index="1">
                         <div class="testimonial-left">
                             <div class="testimonial-avatar">
-                                <div class="avatar-placeholder">JK</div>
+                                <div class="avatar-placeholder" role="img" aria-label="James K. avatar">JK</div>
                             </div>
                             <div
                                 class="testimonial-stars"
@@ -395,7 +399,7 @@
                     <div class="testimonial-slide reveal" data-index="2">
                         <div class="testimonial-left">
                             <div class="testimonial-avatar">
-                                <div class="avatar-placeholder">MR</div>
+                                <div class="avatar-placeholder" role="img" aria-label="Mia R. avatar">MR</div>
                             </div>
                             <div
                                 class="testimonial-stars"

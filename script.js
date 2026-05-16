@@ -146,6 +146,12 @@
                         card.classList.add("hidden");
                     }
                 });
+                const count = document.querySelectorAll('.feat-card:not(.hidden)').length;
+                const total = document.querySelectorAll('.feat-card').length;
+                const grid = document.querySelector('.features-grid');
+                if (grid) {
+                    grid.setAttribute('aria-label', 'Showing ' + count + ' of ' + total + ' features');
+                }
             });
         });
     });
