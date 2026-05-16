@@ -28,8 +28,9 @@
     --color-text-dark-muted: #94a3b8;
     --color-text-on-dark:    #ffffff;
     --color-text-subtle:     #4b5563;
-    --color-text-hero:       #3b4458;
-    --color-text-section:    #5b677b;
+    --color-text-hero:        #3b4458;
+    --color-text-muted-light: #5b677b;
+    --color-text-section:     #5b677b;
     --color-text-footer:     #7e8a98;
     --color-text-footer-logo: #eef2ff;
     --color-avatar-initials: #1e293b;
@@ -725,7 +726,7 @@ body {
 .footer-section {
     background: var(--color-surface-dark);
     color: var(--color-bg-avatar);
-    padding: 48px 0 40px;
+    padding: 56px 0 48px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -859,12 +860,21 @@ body {
         flex: 1;
         text-align: left;
     }
+    .footer-section {
+        padding: 64px 0 56px;
+    }
 }
 
 @media (min-width: 768px) {
     .container {
         max-width: 960px;
         padding: 0 24px;
+    }
+    .hero-title {
+        font-size: 64px;
+    }
+    .section-header h2 {
+        font-size: 38px;
     }
     .pain-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -925,6 +935,9 @@ body {
     }
     .section-header h2 {
         font-size: 42px;
+    }
+    .footer-section {
+        padding: 80px 0 72px;
     }
 }
 
