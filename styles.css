@@ -143,23 +143,8 @@ body {
     transition: color 0.2s ease;
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: #0b0b0f;
-    transition: width 0.2s ease;
-}
-
 .nav-link:hover {
     color: #0b0b0f;
-}
-
-.nav-link:hover::after {
-    width: 100%;
 }
 
 /* ===== 2. HERO (eyebrow, title, text, dual CTA) ===== */
@@ -588,6 +573,8 @@ body {
     background: #0f1117;
     color: #e2e8f0;
     padding: 48px 0 40px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .footer-inner {
@@ -612,9 +599,8 @@ body {
 }
 
 .footer-copyright {
-    font-size: 12px;
+    font-size: 13px;
     color: #7e8a98;
-    margin-top: 8px;
 }
 
 .features-section {
@@ -718,6 +704,9 @@ body {
     .nav-links {
         display: flex;
     }
+    .footer-copyright {
+        font-size: 14px;
+    }
     .nav-link {
         font-size: 15px;
         color: #374151;
@@ -801,6 +790,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+    .footer-copyright {
+        font-size: 15px;
+    }
     .nav-link {
         font-size: 15px;
         color: #1f2937;
@@ -844,5 +836,17 @@ body {
     }
     .section-header h2 {
         font-size: 42px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-primary {
+        animation: none;
+    }
+    .testimonial-slide {
+        animation: none;
+    }
+    * {
+        transition-duration: 0.01ms !important;
     }
 }
