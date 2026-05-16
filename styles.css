@@ -690,15 +690,15 @@ body {
 }
 
 .testimonial-quote::before {
-    content: "\201C";
-    font-size: 28px;
+    content: "\275D";
+    font-size: 1.4em;
     color: var(--color-brand);
     margin-right: 4px;
 }
 
 .testimonial-quote::after {
-    content: "\201D";
-    font-size: 28px;
+    content: "\275E";
+    font-size: 1.4em;
     color: var(--color-brand);
     margin-left: 4px;
     vertical-align: top;
@@ -720,7 +720,7 @@ body {
 .testimonial-dots {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 28px;
     margin-top: 48px;
 }
 
@@ -790,7 +790,7 @@ body {
         height: 80px;
     }
     .avatar-placeholder {
-        font-size: 28px;
+        font-size: 1.4em;
     }
 }
 
