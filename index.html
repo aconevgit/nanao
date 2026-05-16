@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow">
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, viewport-fit=cover"
@@ -11,7 +12,7 @@
             name="description"
             content="A 24kb HTML landing page template for digital products. Faster than ClickFunnels, owned forever, $9.99 one time."
         />
-        <meta name="theme-color" content="#f6f6f2" />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="preload" href="fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="canonical" href="https://nanotemplate.com/" />
 
@@ -53,6 +54,8 @@
                 "@type": "Product",
                 "name": "Nanotemplate",
                 "description": "Ultra-fast HTML landing page template for digital products. Three files, 24kb. No funnel builder required.",
+                "image": "https://nanotemplate.com/images/video-thumbnail.webp",
+                "url": "https://nanotemplate.com",
                 "offers": {
                     "@type": "Offer",
                     "price": "9.99",
@@ -79,6 +82,7 @@
                                 alt="Nanotemplate"
                                 width="36"
                                 height="36"
+                                fetchpriority="high"
                         /></a>
                         <div class="nav-right">
                             <div class="nav-links">
@@ -184,14 +188,7 @@
                 <div class="video-wrapper reveal">
                     <iframe
                         src="https://embed.voomly.com/embed/assets/embed.html?videoId=DU8OyhdE2nk-YiwqAHQdj5mDeyOLSGteBjVgxtdZQZqqO3g8d&videoRatio=1.777778&type=v&skinColor=rgba(0%2C171%2C231%2C1)"
-                        allow="
-                            accelerometer;
-                            autoplay;
-                            clipboard-write;
-                            encrypted-media;
-                            gyroscope;
-                            picture-in-picture;
-                        "
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                         sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
                         width="100%"
@@ -338,7 +335,7 @@
                     aria-live="polite"
                 >
                     <!-- slide 1 -->
-                    <div class="testimonial-slide reveal active" data-index="0">
+                    <div class="testimonial-slide reveal active">
                         <div class="testimonial-left">
                             <div class="testimonial-avatar">
                                 <div class="avatar-placeholder" role="img" aria-label="Sarah M. avatar">SM</div>
@@ -367,7 +364,7 @@
                         </div>
                     </div>
                     <!-- slide 2 -->
-                    <div class="testimonial-slide reveal" data-index="1">
+                    <div class="testimonial-slide reveal">
                         <div class="testimonial-left">
                             <div class="testimonial-avatar">
                                 <div class="avatar-placeholder" role="img" aria-label="James K. avatar">JK</div>
@@ -396,7 +393,7 @@
                         </div>
                     </div>
                     <!-- slide 3 -->
-                    <div class="testimonial-slide reveal" data-index="2">
+                    <div class="testimonial-slide reveal">
                         <div class="testimonial-left">
                             <div class="testimonial-avatar">
                                 <div class="avatar-placeholder" role="img" aria-label="Mia R. avatar">MR</div>
@@ -435,12 +432,13 @@
         <footer class="footer-section" id="footer-area">
             <div class="container">
                 <div class="footer-inner reveal">
-                    <a href="https://pmo.ac" class="footer-logo"
+                    <a href="#" class="footer-logo"
                         ><img
                             src="images/logo.svg"
                             alt="Nanotemplate"
                             width="28"
                             height="28"
+                            fetchpriority="low"
                     /></a>
                     <div class="footer-copyright">
                         © 2026 Nanotemplate - HTML template

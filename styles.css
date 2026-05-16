@@ -593,7 +593,8 @@ body {
     cursor: pointer;
     transition: background var(--transition-base);
     border: none;
-    padding: 0;
+    padding: 8px;
+    margin: -8px;
 }
 
 .dot.active {
